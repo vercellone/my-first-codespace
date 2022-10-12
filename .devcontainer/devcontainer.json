@@ -40,6 +40,7 @@
                 "BriteSnow.vscode-toggle-quotes",
                 "heaths.vscode-guid",
 				"ms-azuretools.vscode-azurefunctions",
+				"ms-dotnettools.dotnet-interactive-vscode",
 				"ms-vscode.powershell"
 			]
 		}
@@ -48,6 +49,6 @@
 	"postCreateCommand": "bash .devcontainer/postCreate.sh",
 	"remoteEnv": {
 		// Append ./Modules to env:PSModulePath
-		"PSModulePath": "${containerEnv:PSModulePath}:${localEnv:CODESPACE_VSCODE_FOLDER}/.devcontainer/Modules"
+		"PSModulePath": "${containerEnv:PSModulePath}:/workspaces/my-first-codespace/.devcontainer/Modules"
 	}
 }
