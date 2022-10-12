@@ -48,6 +48,6 @@
 	"postCreateCommand": "bash .devcontainer/postCreate.sh",
 	"remoteEnv": {
 		// Append ./Modules to env:PSModulePath
-		"PSModulePath": "${containerEnv:PSModulePath}:${localEnv:CODESPACE_VSCODE_FOLDER}/Modules"
+		"PSModulePath": "${containerEnv:PSModulePath}:${localEnv:CODESPACE_VSCODE_FOLDER}/.devcontainer/Modules"
 	}
 }
