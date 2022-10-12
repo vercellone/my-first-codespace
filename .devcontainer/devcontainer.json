@@ -43,5 +43,7 @@
 				"ms-vscode.powershell"
 			]
 		}
-	}
+	},
+
+	"postCreateCommand": "bash .devcontainer/postCreate.sh"
 }
