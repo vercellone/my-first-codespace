@@ -25,5 +25,23 @@
 		"azure-cli": "latest",
 		"powershell": "latest",
 		"dotnet": "latest"
+	},
+
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "pwsh"
+			},
+
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+                "BriteSnow.vscode-toggle-quotes",
+                "heaths.vscode-guid",
+				"ms-azuretools.vscode-azurefunctions",
+				"ms-vscode.powershell"
+			]
+		}
 	}
 }
