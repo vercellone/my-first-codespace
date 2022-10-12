@@ -1,4 +1,4 @@
 
-# Haikus for Codespaces
+# Azure PowerShell 7.2
 
-This is a quick node project template for demoing Codespaces. It is based on the [Azure node sample](https://github.com/Azure-Samples/nodejs-docs-hello-world). It's great!!!
+This is a proof of concept PowerShell project with a codespace which includes pwsh 7.2 and Az modules.
