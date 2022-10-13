@@ -45,7 +45,7 @@
         }
     },
 
-    "postCreateCommand": "bash .devcontainer/postCreate.sh",
+    "postCreateCommand": "pwsh -File .devcontainer/postCreate.ps1",
     "remoteEnv": {
         // Append ./Modules to env:PSModulePath
         "PSModulePath": "${containerEnv:PSModulePath}:/workspaces/my-first-codespace/.devcontainer/Modules"
