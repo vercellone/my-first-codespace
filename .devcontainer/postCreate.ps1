@@ -1,10 +1,4 @@
 #!/opt/microsoft/powershell/7/pwsh
-Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-foreach($module in 'Az','Pester') {
-    Install-Module -Name $module -Scope AllUsers -Repository PSGallery
-}
-Set-PSRepository -Name PSGallery -InstallationPolicy Untrusted
-
 # Use the interactive profile to Import Modules for notebooks
 $interactiveProfileParams = @{
     Path  = Join-Path -Path $env:HOME -ChildPath '.config/powershell/Microsoft.dotnet-interactive_profile.ps1'
