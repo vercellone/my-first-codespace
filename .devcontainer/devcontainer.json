@@ -23,7 +23,10 @@
     "features": {
         "aws-cli": "latest",
         "azure-cli": "latest",
-        "powershell": "latest",
+        "powershell": {
+            "version": "latest",
+            "modules": "Az,Pester"
+        },
         "dotnet": "latest"
     },
 
