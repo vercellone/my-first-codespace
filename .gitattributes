@@ -1,0 +1,3 @@
+# Reference https://github.com/github/linguist
+# linguist-detectable=false: Excluded from linguist stats
+Dockerfile linguist-detectable=false
